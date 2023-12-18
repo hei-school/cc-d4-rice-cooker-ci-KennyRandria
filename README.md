@@ -1,9 +1,9 @@
-   Dart
+ # Dart
 
-Dart specific instructions
+# Dart specific instructions
 
-1. Ensure you have Dart SDK installed.
+   1. Ensure you have Dart SDK installed.
 
-2. Navigate to the Dart directory: cd Dart.
+   2. Navigate to the Dart directory: cd Dart.
 
-3. Run the program: dart rice_cooker.dart.
+   3. Run the program: dart main.dart.
