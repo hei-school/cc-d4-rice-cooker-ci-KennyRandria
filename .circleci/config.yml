@@ -21,7 +21,7 @@ jobs:
 
       - run:
           name: Run RuboCop
-          command: rubocop main.rb
+          command: bundle exec rubocop
 
       # Run tests
       - run:
