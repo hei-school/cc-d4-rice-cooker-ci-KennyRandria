@@ -9,10 +9,9 @@ jobs:
       - checkout
 
       - run:
-          name: Install dependencies
-          command: |
-            gem install bundler
-            bundle install
+    name: Install Bundler
+    command: gem install bundler -v 2.4.22
+
 
       - run:
           name: Run tests
