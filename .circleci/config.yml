@@ -3,23 +3,33 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: circleci/ruby:2.7
+      - image: ruby:latest
+
+    working_directory: /path/to/your/ruby/project
 
     steps:
       - checkout
 
+      # Install dependencies
       - run:
-          name: Create .bundle directory
-          command: mkdir -p .bundle
+          name: Install Bundler
+          command: gem install bundler
 
       - run:
-          name: Update Bundler
-          command: gem update bundler
+          name: Install dependencies
+          command: bundle install
 
       - run:
-          name: Install Dependencies
-          command: bundle install --path=vendor/bundle
+          name: Run RuboCop
+          command: rubocop main.rb
 
+      # Run tests
       - run:
-          name: Run Tests
-          command: bundle exec rspec
+          name: Run tests
+          command: bundle exec ruby test.rb
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - build
