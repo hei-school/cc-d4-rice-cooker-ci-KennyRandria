@@ -9,12 +9,16 @@ jobs:
       - checkout
 
       - run:
-          name: Install Bundler
-          command: gem install bundler -v 2.4.22
+          name: Create .bundle directory
+          command: mkdir -p .bundle
+
+      - run:
+          name: Update Bundler
+          command: gem update bundler
 
       - run:
           name: Install Dependencies
-          command: bundle install --gemfile=Ruby/Gemfile
+          command: bundle install --path=vendor/bundle
 
       - run:
           name: Run Tests
