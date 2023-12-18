@@ -9,11 +9,13 @@ jobs:
       - checkout
 
       - run:
-    name: Install Bundler
-    command: gem install bundler -v 2.4.22
-
+          name: Install Bundler
+          command: gem install bundler -v 2.4.22
 
       - run:
-          name: Run tests
-          command: |
-            bundle exec rspec
+          name: Install Dependencies
+          command: bundle install
+
+      - run:
+          name: Run Tests
+          command: bundle exec rspec
