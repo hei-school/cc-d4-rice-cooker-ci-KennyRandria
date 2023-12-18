@@ -1,35 +1,27 @@
 version: 2.1
 
+workflows:
+  version-1:
+    jobs:
+      - build
+
 jobs:
   build:
     docker:
-      - image: ruby:latest
+      - image: ruby:3.2.2
 
-    working_directory: /path/to/your/ruby/project
+    working_directory: /app
 
     steps:
       - checkout
 
-      # Install dependencies
-      - run:
-          name: Install Bundler
-          command: gem install bundler
-
       - run:
           name: Install dependencies
-          command: bundle install
+          command: |
+            gem install bundler -v '~> 2.0'
+            bundle install --jobs 4 --retry 3
 
-      - run:
-          name: Run RuboCop
-          command: bundle exec rubocop
-
-      # Run tests
       - run:
           name: Run tests
-          command: bundle exec ruby test.rb
-
-workflows:
-  version: 2
-  build:
-    jobs:
-      - build
+          command: |
+            bundle exec rspec
