@@ -1,9 +1,9 @@
-Ruby
+ # Ruby
 
-Ruby specific instructions :
+ # Ruby specific instructions :
 
-Ensure you have Ruby installed.
+  1. Ensure you have Ruby installed.
 
-Navigate to the Ruby directory: cd Ruby.
+  2. Navigate to the Ruby directory: cd Ruby.
 
-Run the program: ruby rice_cooker.rb
+  3. Run the program: ruby main.rb
