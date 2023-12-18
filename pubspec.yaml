@@ -1,6 +1,9 @@
 name: my_project
 description: A Dart project
 
+environment:
+  sdk: '>=2.10.0 <3.0.0'
+
 dependencies:
   mockito: ^5.0.6
 
