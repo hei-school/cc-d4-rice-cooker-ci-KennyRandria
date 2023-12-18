@@ -9,26 +9,34 @@ Choose your weapon: C#, Ruby, Dart, or Swift, and start cooking!
 # Features:
 
 Cook rice to perfection
+
 Keep your rice warm and delicious
+
 Set a timer for precise cooking ⏰
+
 Enjoy automatic shutdown for peace of mind
+
 Return to the main menu effortlessly
-Available Languages:
 
-Dive into C# for a powerful and versatile experience: C#
-
-Master the art of rice with Ruby's elegance: RUBY
-
-Take control with Dart's modern simplicity: DART
-
-Embark on your culinary journey with Swift's agility: SWIFT
 
 # Get Started:
 
-Clone the repository: git clone https://github.com/hei-school/cc-d4-rice-cooker-ci-KennyRandria.git
+Clone the repository: 
+
+                                    git clone https://github.com/hei-school/cc-d4-rice-cooker-ci-KennyRandria.git
 
 Choose your preferred language directory.
 
-Follow the language-specific instructions to bring your rice cooker to life!
+Available Languages:
 
-So, what are you waiting for? Get ready to cook up some delicious rice and unlock your inner culinary artist! ‍
+Dive into C# for a powerful and versatile experience : [C #](https://github.com/hei-school/cc-d4-rice-cooker-ci-KennyRandria/tree/feature/C%23)
+
+Master the art of rice with Ruby's elegance : [R U B Y](https://github.com/hei-school/cc-d4-rice-cooker-ci-KennyRandria/tree/feature/Ruby)
+
+Take control with Dart's modern simplicity : [D A R T](https://github.com/hei-school/cc-d4-rice-cooker-ci-KennyRandria/tree/feature/Dart)
+
+Embark on your culinary journey with Swift's agility : [S W I F T](https://github.com/hei-school/cc-d4-rice-cooker-ci-KennyRandria/tree/feature/Swift)
+
+  Follow the language-specific instructions to bring your rice cooker to life!
+
+  # So, what are you waiting for? Get ready to cook up some delicious rice and unlock your inner culinary artist! ‍
